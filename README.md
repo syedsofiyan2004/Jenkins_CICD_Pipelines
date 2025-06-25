@@ -342,7 +342,51 @@ pipeline {
 ```
 As we can see we have used the label linux which means this pieline is running on linux and the stages are the sequence we are running the commands like first Install Dependencies and then we need to run the tests which we are doing via pipeline
 
-now 
+now after writing this pipeline in a file named Jenkinsfile we can now push our repository in the github.
+
+![Screenshot 2025-06-23 164003](https://github.com/user-attachments/assets/155a346b-7316-44c4-99f1-684e8146ae0f)
+
+We have pushed our repository now its the time to create our first pipeline:
+![Screenshot 2025-06-23 165152](https://github.com/user-attachments/assets/3b8266d0-a82d-41fb-b8e3-06173d54cfda)
+
+i have created a pipeline named **sofiyan-first-pipeline** now we have to set up the configurations:
+
+![Screenshot 2025-06-23 165458](https://github.com/user-attachments/assets/4adddd9b-c1ec-46d1-88df-796c689190f6)
+![Screenshot 2025-06-23 165523](https://github.com/user-attachments/assets/938b1c53-ead0-4895-a8d0-118b898b3465)
+![Screenshot 2025-06-23 165537](https://github.com/user-attachments/assets/da0489c7-d1f6-4976-a070-e90aff9d4a0a)
+
+We have added Git as SCM for our pipeline and have given our GitHub Repository link and in branches to build we gave **main** branch as we have pushed our repository in our main branch and then for the script path we have given Jenkinsfile as we have written our Pipeline in the Jenkinsfile and click on save and apply so see the magic of Automation:
+![Screenshot 2025-06-23 165615](https://github.com/user-attachments/assets/ac1ceb19-46ea-423d-89e5-16d66e0b8219)
+
+We should Press on Build Now to start the build:
+![Screenshot 2025-06-23 171949](https://github.com/user-attachments/assets/daaddcbf-aaaa-476f-acf7-bd47f4c5e7ed)
+![Screenshot 2025-06-23 172009](https://github.com/user-attachments/assets/2735aaa1-10db-4b49-960e-a94ec3cdc7a3)
+
+As we can see the build is successful which means the pipeline was executed and the automation was done
+
+## This is the final deliverable of this Assignment
+
+Now we have to do a cleanup Job now by executing this command all the resoutces created will be deleted:
+```bash
+terraform destroy
+```
+![Screenshot 2025-06-23 172406](https://github.com/user-attachments/assets/f5445041-ec13-4419-85f7-3dc6c7cca18e)
+![Screenshot 2025-06-23 172431](https://github.com/user-attachments/assets/b7e59525-9930-4e98-8c5d-1b1c574ba4c1)
+
+
+# END OF ASSIGNMENT
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
